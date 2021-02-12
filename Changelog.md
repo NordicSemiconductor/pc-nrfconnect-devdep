@@ -1,3 +1,21 @@
+## Unreleased
+### Added
+- Shared styles can now be imported in SCSS from
+  `~pc-nrfconnect-shared/styles`.
+### Steps to upgrade when using this package
+- If you had a import like
+```scss
+@import '~pc-nrfconnect-shared/src/variables';
+```
+  in your SCSS code before, you should replace it with
+```scss
+@import "~pc-nrfconnect-shared/styles";
+```
+  because even though for now the code with
+  `~pc-nrfconnect-shared/src/variables` will keep on working, it is
+  not part of the public API that we try to preserve. Contrary to
+  `~pc-nrfconnect-shared/styles`, which is part of the supported API.
+
 ## 4.17.3
 ### Fix
 - Property `active` was missing in the TypeScript definition of the pane
