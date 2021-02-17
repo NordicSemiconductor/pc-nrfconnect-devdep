@@ -34,34 +34,9 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { arrayOf } from 'prop-types';
+import { elementType, exact, string } from 'prop-types';
 
-import { currentPane as currentPaneSelector } from '../App/appLayout';
-import PanePropType from '../App/PanePropType';
-import NavMenuItem from './NavMenuItem';
-
-const NavMenu = ({ panes }) => {
-    const currentPane = useSelector(currentPaneSelector);
-
-    return (
-        <div data-testid="nav-menu">
-            {panes.map(({ name }, index) => (
-                <NavMenuItem
-                    key={name}
-                    index={index}
-                    isFirst={index === 0}
-                    isSelected={currentPane === index}
-                    label={name}
-                />
-            ))}
-        </div>
-    );
-};
-
-NavMenu.propTypes = {
-    panes: arrayOf(PanePropType.isRequired).isRequired,
-};
-
-export default NavMenu;
+export default exact({
+    name: string.isRequired,
+    Main: elementType.isRequired,
+});
