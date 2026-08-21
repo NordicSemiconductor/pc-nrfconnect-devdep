@@ -1,5 +1,7 @@
 {
     "compilerOptions": {
+        "types": ["node", "jest", "testing-library__jest-dom"],
+
         "target": "es2021",
         "moduleResolution": "node",
         "esModuleInterop": true,
