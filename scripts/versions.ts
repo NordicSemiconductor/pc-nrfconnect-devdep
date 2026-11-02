@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: LicenseRef-Nordic-4-Clause
  */
 
-export const electron = '43.4.1';
+export const electron = '43.8.1';
 export const chrome = '150.0.7871.224';
 export const node = '24.18.1';
 
