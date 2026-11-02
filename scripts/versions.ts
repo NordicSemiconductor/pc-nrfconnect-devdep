@@ -5,8 +5,8 @@
  */
 
 export const electron = '43.8.1';
-export const chrome = '150.0.7871.224';
-export const node = '24.18.1';
+export const chrome = '150.0.7871.250';
+export const node = '24.22.0';
 
 // Chrome from Electron 32, used in launcher >=5.1.0, <5.4.0
 export const chromeToBuildFor = '128.0.6613';
