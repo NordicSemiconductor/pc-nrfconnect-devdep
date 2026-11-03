@@ -26,7 +26,7 @@ jobs:
                       const GROUPS = {
                           'Version in package.json': ['Bumped', 'Can stay the same'],
                           'Changelog': ['Updated', 'Update not needed'],
-                          'Support doc in docs/...yml': ['Updated', 'Can stay the same'],
+                          'Feature support in doc/app-features.yml': ['Updated', 'Can stay the same'],
                           "Greg's review": ['Greg confirmed this PR', 'Review not needed'],
                       };
                       const BYPASS_LABEL = 'checkboxes not required';
